@@ -3,27 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>查看图片</title>
+    <title>查看文档</title>
     <style>
-        /* 清除留白，设置纯黑背景，开启弹性居中布局 */
-        body, html { 
-            margin: 0; 
-            padding: 0; 
-            height: 100%; 
-            background-color: #000000; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-        }
-        /* 让图片最大只能和屏幕一样大，且按比例缩放不拉伸 */
-        img { 
-            max-width: 100%; 
-            max-height: 100%; 
-            object-fit: contain; 
-        }
+        /* 让网页四周没有留白，全屏显示 */
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #525659; }
+        /* 隐藏边框，撑满屏幕 */
+        iframe { width: 100%; height: 100%; border: none; }
     </style>
 </head>
 <body>
-    <img src="1.jpg" alt="展示的图片">
+    <!-- 将下面的 "your-document.pdf" 替换为你实际的 PDF 文件名 -->
+    <iframe src="1.pdf"></iframe>
 </body>
 </html>
